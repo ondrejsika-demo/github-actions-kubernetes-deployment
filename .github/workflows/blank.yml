@@ -21,7 +21,7 @@ jobs:
       - run: make docker-build
       - run: make docker-push
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: dev
     needs: build
     steps:
