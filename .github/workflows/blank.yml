@@ -12,4 +12,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: docker://sikalabs/kubectl
         with:
-          args: sh .ci/deploy.sh
+          args: ls ; sh .ci/deploy.sh
