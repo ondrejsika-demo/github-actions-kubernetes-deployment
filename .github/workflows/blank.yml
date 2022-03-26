@@ -13,3 +13,5 @@ jobs:
       - uses: docker://sikalabs/ci
         with:
           args: sh .ci/deploy.sh
+        env:
+          KUBECONFIG_BASE64: ${{ secrets.KUBECONFIG_BASE64 }}
