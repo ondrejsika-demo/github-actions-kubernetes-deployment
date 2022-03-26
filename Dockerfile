@@ -1,0 +1,1 @@
+FROM sikalabs/hello-world-server:ondrejsika
