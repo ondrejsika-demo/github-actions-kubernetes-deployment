@@ -16,10 +16,10 @@ jobs:
       - run: env
         env:
           KUBECONFIG_BASE64: ${{ secrets.KUBECONFIG_BASE64 }}
-      - run: ls
+      - run: ls -al
       - uses: docker://sikalabs/dev
         with:
-          args: tree .*
+          args: tree
       - uses: docker://sikalabs/ci
         with:
           args: sh .ci/deploy.sh
